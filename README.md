@@ -1,4 +1,5 @@
 1.Discuss the time complexities of major operations in a Binary Search Tree (BST) and explain the need for a balanced BST.
+
 A:A Binary Search Tree (BST) allows efficient searching, insertion, and deletion of elements.
 The time complexity of search, insert, and delete operations in a BST is O(h), where h is the height of the tree.
 In the best and average case (balanced BST), the height is O(log n), making operations fast.
