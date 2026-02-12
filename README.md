@@ -8,6 +8,7 @@ A balanced BST maintains its height close to log n by evenly distributing nodes.
 Thus, balanced BSTs (like AVL or Red-Black trees) ensure consistent and efficient performance.
 
 2.Discuss How AVL tree detects imbalance.
+
 A: An AVL tree detects imbalance by maintaining a balance factor for every node.
 The balance factor is calculated as: Balance Factor = Height of Left Subtree − Height of Right Subtree
 For an AVL tree to remain balanced, the balance factor of every node must be −1, 0, or +1.
@@ -17,6 +18,7 @@ The tree then identifies the type of imbalance (LL, RR, LR, or RL) based on subt
 Finally, appropriate rotations are applied to restore balance and maintain logarithmic height.
 
 3.What are the four types of imbalance cases in an AVL tree?
+
 A:AVL trees can become imbalanced in four ways after insertion or deletion:
 Left-Left (LL) Case:
 Imbalance occurs when a node is inserted into the left subtree of the left child.
@@ -28,6 +30,7 @@ Right-Left (RL) Case:
 Imbalance occurs when a node is inserted into the left subtree of the right child.
 
 4.Compare AVL  Red Black Tree and when to use which one?
+
 A:AVL trees are strictly balanced binary search trees, keeping the height difference of left and right subtrees ≤ 1.
 This ensures all operations—search, insert, and delete—take O(log n) time, with searches being very fast.
 However, insertions and deletions may require multiple rotations to maintain balance, making updates slower.
@@ -37,6 +40,7 @@ AVL trees are preferred in read-heavy applications where fast searches are cruci
 Red-Black trees are preferred in write-heavy applications where insertions and deletions are frequent.
 
 5.Explain why Java uses Red Black Tree not AVL Tree in tree map implementation.
+
 A:Java uses Red-Black Trees for TreeMap because they provide balanced search performance with guaranteed O(log n) operations.
 Unlike AVL trees, Red-Black Trees are less strictly balanced, so insertions and deletions require fewer rotations.
 This makes update-heavy operations faster compared to AVL trees.
